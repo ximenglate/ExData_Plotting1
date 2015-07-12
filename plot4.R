@@ -22,7 +22,7 @@ objectSize <- object.size(consumption) #Check object size
 consumption$DateTime <- strptime(paste(consumption$Date, consumption$Time),
                                  format="%d/%m/%Y %H:%M:%S")
 
-#Plot 3
+#Plot 4
 par(mfrow=c(2,2))
 plot(consumption$DateTime, consumption$Global_active_power, type="l", xlab="", ylab="Global Active Power")
 plot(consumption$DateTime, consumption$Voltage, type="l", xlab="datetime", ylab="Voltage")
